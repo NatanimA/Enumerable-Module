@@ -33,7 +33,7 @@
 
 # 📖 [Enumerable-Module] <a name="about-project"></a>
 
-> **Morse Code Decoder** an application created by Ruby-lang.
+> **Enumerable-Module** an application created by Ruby-lang.
 
 ## 🛠 Built With <a name="built-with"></a>
 
