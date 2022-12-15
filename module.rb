@@ -1,4 +1,4 @@
-module Enumerable
+module MyEnumerable
   def all?
     each do |e|
       return true unless block_given?

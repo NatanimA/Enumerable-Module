@@ -1,7 +1,7 @@
 require_relative './module'
 
-class EnumList
-  include Enumerable
+class MyList
+  include MyEnumerable
 
   def initialize(*list)
     @list = list
@@ -14,8 +14,12 @@ class EnumList
   end
 end
 
-list = EnumList.new(4, 67, 8, 7, 45, 8, 1, 3, 2, 9)
+list = MyList.new(1, 2, 3, 4, 5, 7, 56, 56, 67)
 
+puts(list.all? { |e| e < 5 })
+puts(list.all? { |e| e > 5 })
+puts(list.any? { |e| e == 2 })
+puts(list.any? { |e| e == 5 })
 puts(list.all? { |e| e < 67 })
 puts(list.all? { |e| e > 67 })
 puts(list.any? { |e| e == 5 })
